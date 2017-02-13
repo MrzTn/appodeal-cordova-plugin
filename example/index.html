@@ -16,6 +16,16 @@
             Appodeal.setLogging(true);
 
             setUserSettings();
+            
+            Appodeal.disableNetwork("amazon_ads");
+            Appodeal.disableNetwork("chartboost");
+            Appodeal.disableNetwork("unity_ads");
+            Appodeal.disableNetwork("facebook");
+            Appodeal.disableNetwork("yandex");
+            Appodeal.disableNetwork("avocarrot");
+            Appodeal.disableNetwork("flurry");
+            Appodeal.disableNetwork("cheetah");
+            Appodeal.disableNetwork("inmobi");
 
             Appodeal.initialize(appKey, Appodeal.INTERSTITIAL | Appodeal.SKIPPABLE_VIDEO | Appodeal.BANNER | Appodeal.REWARDED_VIDEO);
 
